@@ -64,8 +64,8 @@ def gray_sketch(ori, blur, threshold = 8):
 
 def run():
 	start = time.time()
-	root = 'C:\\Users\\USER-WNB\\Desktop\\datasets\\illust\\danbooru-images'
-	save = 'C:\\Users\\USER-WNB\\Desktop\\datasets\\sketch\\danbooru-images'
+	root = 'C:\\Users\\USER-WNB\\your_image_path'
+	save = 'C:\\Users\\USER-WNB\\sketch_save_path'
 	for path in dict.fromkeys(list_dir(root),True):
 		pathName = dict.fromkeys(list_file(path), True)
 		if not os.path.isdir(os.path.join(save, path.split('\\')[-1])):
@@ -83,8 +83,8 @@ def run():
 def mul_run(threadNum = 4):
 	start = time.time()
 	filterSize = 11
-	root = 'C:\\Users\\USER-WNB\\Desktop\\datasets\\illust\\danbooru-images'
-	save = 'C:\\Users\\USER-WNB\\Desktop\\datasets\\sketch\\danbooru-images'
+	root = 'C:\\Users\\USER-WNB\\your_image_path'
+	save = 'C:\\Users\\USER-WNB\\sketch_save_path'
 	
 	
 	for path in dict.fromkeys(list_dir(root),True):
